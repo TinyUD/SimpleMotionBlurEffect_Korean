@@ -7,20 +7,20 @@ using YukkuriMovieMaker.Plugin.Effects;
 
 namespace SimpleMotionBlurEffect
 {
-    [VideoEffect("簡易モーションブラー", ["加工"], ["motion blur"], IsAviUtlSupported = false)]
+    [VideoEffect("간단한 모션 블러", ["가공"], ["motion blur"], IsAviUtlSupported = false)]
     internal class SimpleMotionBlurEffect : VideoEffectBase
     {
-        public override string Label => "簡易モーションブラー";
+        public override string Label => "간단한 모션 블러";
 
-        [Display(GroupName = "簡易モーションブラー", Name = "回転ブラー", Description = "回転ブラー")]
+        [Display(GroupName = "간단한 모션 블러", Name = "회전 블러", Description = "회전 블러 효과의 강도")]
         [AnimationSlider("F1", "%", 0, 100)]
         public Animation CircularBlurRate { get; set; } = new Animation(0, 0, 1000);
 
-        [Display(GroupName = "簡易モーションブラー", Name = "方向ブラー", Description = "方向ブラー")]
+        [Display(GroupName = "간단한 모션 블러", Name = "방향 블러", Description = "방향 블러 효과의 강도")]
         [AnimationSlider("F1", "%", 0, 100)]
         public Animation DirectionalBlurRate { get; set; } = new Animation(0, 0, 1000);
 
-        [Display(GroupName = "簡易モーションブラー", Name = "放射ブラー", Description = "放射ブラー")]
+        [Display(GroupName = "간단한 모션 블러", Name = "방사형 블러", Description = "방사형 블러 효과의 강도")]
         [AnimationSlider("F1", "%", 0, 100)]
         public Animation RadialBlurRate { get; set; } = new Animation(0, 0, 1000);
 
