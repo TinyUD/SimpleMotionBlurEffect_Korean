@@ -3,6 +3,7 @@
 ## 개요
 간단한 모션 블러 효과
 아이템의 그리기 위치, 확대율, 회전각의 변화에 맞춰 블러를 적용합니다.
+한글화는 gemini 2.0 flash thinking experimental를 이용하였습니다
 
 ## 사용 예시
 ![사용 예시](/image/image.gif)
